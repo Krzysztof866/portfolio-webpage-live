@@ -1,0 +1,151 @@
+@media(min-width: 768px) {
+
+    .cards {
+
+        &__box {
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+
+        }
+
+        &__card{
+            grid-template-rows: 40% 20% 40%;
+
+            &--one {
+                grid-row: 1/2;
+                grid-column: 1/5;
+            }
+
+            &--two {
+                grid-row: 1/2;
+                grid-column: 5/9;
+            }
+
+            &--three {
+                grid-row: 1/2;
+                grid-column: 9/13;
+            }
+
+            &--four {
+                grid-row: 2/3;
+                grid-column: 3/7;
+            }
+
+            &--five {
+                grid-row: 2/3;
+                grid-column: 7/11;
+            }
+
+        }
+    }
+
+
+    /////portfo-proj
+
+
+    .portfo {
+
+
+        .project-box {
+          display: grid;
+          grid-template-rows: 1fr 0.5fr 1fr;
+          grid-gap: 1em;
+          padding: 0em 2em 8em 2em;
+      
+          .first {
+              grid-column: 1/2 ;
+              grid-row: 1/2;
+          }
+      
+          .secnd {
+              grid-column: 2/3 ;
+              grid-row: 1/2;
+          }
+      
+          .third {
+              grid-column: 1/-1;
+              grid-row: 2/3;
+      
+               p {
+                  font-size: 1.7rem;
+              }
+          }
+           
+          .fourth {
+              grid-column: 1/2;
+              grid-row: 3/4;
+          }
+      
+          .fifth {
+              grid-column: 2/3;
+              grid-row: 3/4;
+          }
+        }
+          
+        .project-title {
+          font-size: 1.1em;
+        }
+      
+    }
+
+
+    //sc
+
+    .second {
+
+        .fun__text {
+            font-size: 2.5rem;
+        }
+    }
+
+    //contact
+    
+    .contact {
+        #status {
+            grid-column: 3/6;
+            grid-row: 3/4;
+            padding-left: 2em;
+            font-size: 1.5rem;
+        }
+
+        &__form {
+            gap: 25px;
+        }
+
+        &__form-box {
+
+            label {
+                display: block;
+                margin-bottom: 0.5em;
+                font-size: 1.8rem;
+            }
+
+            &:nth-child(1) {
+                grid-column: 1/4;
+                grid-row: 1/2;
+            }
+    
+            &:nth-child(2) {
+                grid-column: 4/7;
+                grid-row: 1/2;
+            }
+    
+            &:nth-child(3) {
+                grid-column: 1/-1;
+                grid-row: 2/3;
+            }
+        }
+
+        &__form-btn {
+            grid-row: 3/4;
+        }
+    }
+
+    //foot
+
+    footer {
+        font-size: 1.6rem;
+    }
+    
+    
+}
