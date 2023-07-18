@@ -461,6 +461,7 @@ body {
 
     .project-listing {
       position: relative;
+      width: 48%;
       border: 1px solid crimson;
     }
     
@@ -501,6 +502,14 @@ body {
     
     .project-listing:hover .project-image img {
       filter: blur(2px);
+    }
+
+    .project-inner{
+        display: flex;
+    }
+
+    .portfo .project-listing{
+        width: 48%;
     }
     
 
